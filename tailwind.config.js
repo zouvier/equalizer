@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content: ['./starter-code/*.html'],
+  content: ['./*.html'],
   theme: {
     extend: {
       colors: {
@@ -25,10 +25,10 @@ module.exports = {
       'main':['IBM Plex Sans', 'sans-serif']
     },
     backgroundImage: {
-      'desktop': "url('../assets/bg-main-desktop.png')",
-      'tablet': "url('../assets/bg-main-tablet.png')",
-      'mobile': "url('../assets/bg-main-mobile.png')",
-      'facebook': "url('../assets/icon-facebook.svg')"
+      'desktop': "url('..starter-code/assets/bg-main-desktop.png')",
+      'tablet': "url('..starter-code/assets/bg-main-tablet.png')",
+      'mobile': "url('..starter-code/assets/bg-main-mobile.png')",
+      'facebook': "url('..starter-code/assets/icon-facebook.svg')"
     },
   },
     screens: {
