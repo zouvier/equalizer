@@ -1,0 +1,459 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+*:focus-visible{
+    outline: 0.2rem solid #faaf53;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+#ios:hover, #ios:focus-visible{
+    background-color: #66E2DC;
+    color: white;
+}
+
+#android:hover, #android:focus-visible{
+    background-color: #FFB964;
+    color: black;
+}
+
+
+
+#social svg:hover{
+    fill: #FA7453;
+}
+#social svg:focus-visible{
+    fill: #FA7453;
+}
+
+#contact address{
+    font-style: normal;
+}
+#contact a{
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+
+
+@media (max-width: 713px) {
+
+    body{
+        background-image: url("../starter-code/assets/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        background-position-y: -10rem;
+        background-position-x: left;
+    }
+
+    header,
+    hgroup {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+    hgroup {
+        padding-top: 4rem;
+        margin-bottom: 10.375rem;
+    }
+
+    hgroup p {
+        padding-top: 1.25rem;
+    }
+
+    hgroup h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-items: center;
+        max-width: 100%;
+        background-color: black;
+        color: white;
+        background-image: url("../starter-code/assets/bg-pattern-2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: top;
+        background-size: 280px 420px;
+        border-radius: 0.75rem;
+
+    }
+
+    .app {
+        position: relative;
+        top: -6.125rem;
+        max-width: 13rem;
+        max-height: 26.875rem;
+    }
+
+    #info {
+        border-radius: 0.75rem;
+        max-width: 100%;
+        background-color: #FA7453;
+        padding: 2.625rem;
+    }
+
+    #info h2{
+        font-weight: 700;
+        padding-bottom: 0.75rem;
+    }
+
+    #cards-info {
+        padding-bottom: 2.25rem;
+    }
+
+    #rate{
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    #rate span{
+        font-size: 4.063rem;
+        font-weight: 700;
+        padding-right: 1rem;
+    }
+
+    #ios{
+        
+        background: #191826;
+        color: white;
+        margin-bottom: 1rem;
+        
+        
+    }
+
+    #android{
+        background: #FCFAF9;
+        color: black;
+    }
+
+
+    .buttons{
+        margin: 0 auto;
+        white-space: nowrap;
+        padding: 1rem 4.813rem;
+        display: flex;
+        text-decoration: none;
+        border-radius: 0.75rem;
+        width: 85%;
+        align-items: center;
+        place-content: center;
+        gap: 0.5rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1.5rem;
+    
+    }
+
+    #social{
+        display: flex;
+        gap: 1.25rem;
+    }
+
+    footer a{
+        margin-bottom: 2rem;
+    }
+
+    #contact{
+        margin-bottom: 4rem;
+    }
+
+
+
+
+}
+
+@media (min-width: 714px){
+    body{
+        background-image: url("../starter-code/assets/bg-main-tablet.png");
+        background-repeat: no-repeat;
+        background-position-x: -20rem ;
+        background-position-y: -20rem;
+    }
+
+    main{
+        background-image: url("../starter-code/assets/bg-pattern-1.svg");
+        background-repeat: no-repeat;
+        background-position-y: -5rem;
+        background-position-x: right;
+        background-size: 16.625rem 25rem;
+        padding-top: 4rem;
+
+    }
+
+    /*  */
+    header,
+    hgroup {
+        
+        padding: 0 2.5rem;
+    }
+    /*  */
+    hgroup {
+        padding-top: 4rem;
+        margin-bottom: 15.563rem;
+        max-width: 32.5rem;
+        max-height: 20.75rem;
+    }
+    /*  */
+    hgroup p {
+        margin-top: 1.75rem;
+    }
+    /*  */
+    hgroup h1 {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+
+    /*  */
+    #cards {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-items: center;
+        max-width: 69.375rem;
+        min-height: 37.5rem;
+        background-color: black;
+        color: white;
+        background-image: url("../starter-code/assets/bg-pattern-2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: top;
+        background-size: 280px 420px;
+        border-radius: 0.75rem;
+
+    }
+
+    .app {
+        position: sticky;
+        max-width: 16.875rem;
+        max-height: 34.75rem;
+    }
+
+    .appcontainer{
+        position:absolute;
+        top: -8.625rem;
+        left: 4rem;
+
+    }
+
+    .infocontainer{
+        position: absolute;
+        top: 10rem;
+        right: 7rem;
+    }
+
+    #info {
+        position: sticky;
+        border-radius: 0.75rem;
+        max-width: 24.938rem;
+        background-color: #FA7453;
+        padding: 2.625rem;
+        
+    }
+    
+
+    #info h2{
+        font-weight: 700;
+        padding-bottom: 0.75rem;
+    }
+
+    #cards-info {
+        padding-bottom: 2.25rem;
+    }
+
+    #rate{
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    #rate span{
+        font-size: 4.063rem;
+        font-weight: 700;
+        padding-right: 1rem;
+    }
+
+    #ios{
+        
+        background: #191826;
+        color: white;
+        margin-bottom: 1rem;
+        
+        
+    }
+
+    #android{
+        background: #FCFAF9;
+        color: black;
+    }
+
+
+    .buttons{
+        margin: 0 auto;
+        white-space: nowrap;
+        padding: 1rem 4.813rem;
+        display: flex;
+        text-decoration: none;
+        border-radius: 0.75rem;
+        width: 85%;
+        align-items: center;
+        place-content: center;
+        gap: 0.5rem;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,2fr);
+        padding: 4rem 1.5rem;
+        margin-top: 11.438rem;
+
+    }
+
+    #social{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: flex;
+        gap: 1.25rem;
+        align-items:center;
+        place-content: flex-end;
+    }
+
+    footer a{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-bottom: 2rem;
+    }
+
+    #contact{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-bottom: 4rem;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    body{
+        background-image: url("../starter-code/assets/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-position-x: -20rem ;
+        background-position-y: -20rem;
+    }
+
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1;
+        padding: 4rem 1.5rem;
+        margin-top: 11.438rem;
+
+    }
+
+    #social{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: flex;
+        gap: 1.25rem;
+        align-items:center;
+        place-content: flex-end;
+    }
+
+    footer a{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-bottom: 2rem;
+    }
+
+    #contact{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 1100px){
+    hgroup {
+        max-width: 63.438rem;
+    }
+}
