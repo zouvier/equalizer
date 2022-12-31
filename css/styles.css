@@ -69,7 +69,11 @@ h6 {
     color: black;
 }
 
-
+.logo{
+    display: block;
+    width: 9.188rem;
+    height: 2rem;
+}
 
 #social svg:hover{
     fill: #FA7453;
